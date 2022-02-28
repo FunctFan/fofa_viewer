@@ -24,7 +24,8 @@ Click https://github.com/wgpsec/fofa_viewer/releases to download.
 - If you are using JDK11 or higher version, please download the zip package without version number.
 - If you are using JDK8, please download FoFaViewer_JDK8.zip
 
-Download [latest build](https://github.com/wgpsec/fofa_viewer/releases/) and edit `config.properties` to start. 
+Download [latest build](https://github.com/wgpsec/fofa_viewer/releases/) and edit `config.properties` to start.
+The default base domain of FOFA api is `https://fofa.info`. You can change it in config if FOFA made any change.
 
 MacOS users can [Create a Automator Workflow](docs/mac.md) to pin Fofa_Viewer in Dashboard.
 

@@ -2,7 +2,7 @@
 <p align="center"> 
 <img src="https://img.shields.io/badge/JDK-1.8-green">
 <img src="https://img.shields.io/badge/JDK-11-green">
-<img src="https://img.shields.io/badge/version-1.1.0-brightgreen">
+<img src="https://img.shields.io/badge/version-1.1.5-brightgreen">
 <img src="https://img.shields.io/badge/author-f1ashine-orange">
 <img src="https://img.shields.io/badge/WgpSec-%E7%8B%BC%E7%BB%84%E5%AE%89%E5%85%A8%E5%9B%A2%E9%98%9F-blue">
 </p>
@@ -12,29 +12,31 @@
 
 ##  简介
 
-Fofa_Viewer 一个简单易用的fofa客户端由WgpSec狼组安全团队 [**f1ashine**](https://github.com/f1ashine) 师傅主要编写 ，程序使用使用javaFx编写，便于跨平台使用
+Fofa_Viewer： 一个简单易用的fofa客户端，由 WgpSec狼组安全团队 [**f1ashine**](https://github.com/f1ashine) 师傅主要开发。程序使用 JavaFX 编写，便于跨平台使用
 
 ##  使用说明
-本工具基于FoFa的API进行的封装，使用时需要高级会员或者普通会员的API key，使用注册用户的API key会提示账户需要充值F币。
+本工具基于 FoFa 的 API 进行封装，使用时需要高级会员或者普通会员的 API key。使用注册用户的 API key 会提示账户需要充值F币。
 
 点击 https://github.com/wgpsec/fofa_viewer/releases 下载
 
-- 如果你使用的是JDK11版本以及更高java版本，请选择不带版本号的zip包使用
-- 如果你使用的是**JDK8**版本，请选择 FoFaViewer_JDK8 下载使用
+- 如果你使用的是 JDK11 以及更高的 Java 版本，请选择不带版本号的zip包使用
+- 如果你使用的是 **JDK8** 版本，请选择下载 FoFaViewer_JDK8
 
-下载后修改`config.properties` 即可开始使用
+JDK16+ 在导出 Excel 时会报错，可在命令行添加 JVM 参数 `--illegal-access=permit` 以导出。
 
-Mac 用户可通过 [自动化操作创建应用程序](docs/mac.md) 进行快速启动 Fofa_Viewer
+下载后修改 `config.properties`即可开始使用，api参数默认为`https://fofa.info`，若fofa官方更换域名可修改该参数后再使用。
+
+Mac 用户可通过 [自动化操作创建应用程序](docs/mac.md) 建立快速启动 Fofa_Viewer 的快捷图标
 
 **若下载速度太慢可以使用**
 
-https://hub.fastgit.org/wgpsec/fofa_viewer (推荐)
+https://hub.fastgit.xyz/wgpsec/fofa_viewer (推荐)
 
 https://gitee.com/wgpsec/fofa_viewer （镜像）
 
 **FOFA会员说明链接！！！！！**
 
-VIP说明：https://fofa.so/static_pages/vip
+VIP说明：https://fofa.info/static_pages/vip
 
 ## :sparkles: 功能
 1. 多标签式查询结果展示
@@ -45,7 +47,8 @@ VIP说明：https://fofa.so/static_pages/vip
 6. 支持输入智能提示
 7. 支持fofa的一键排除干扰（蜜罐）功能。（注：需要高级会员，使用时会在tab页标记`(*)`）
 8. 支持Fid查询（注：需要高级会员，查询时需要勾选）
-9. 显示fofa官网的查询语法
+9. 支持full查询(查询全部数据)
+10. 显示fofa官网的查询语法
 
 ![](docs/cn/ui.png)
 ![](docs/cn/search.jpg)
